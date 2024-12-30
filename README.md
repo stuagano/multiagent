@@ -58,6 +58,7 @@ It is built on a modular design and currently supports the following components:
 * **EmbedderAgent:** An agent specialized in generating text embeddings using Large Language Models (LLMs). It supports direct interaction with Vertex AI's TextEmbeddingModel or uses LangChain's VertexAIEmbeddings for a simplified interface.
 * **ResponseAgent:** An agent that generates natural language responses to user questions based on SQL query results. It acts as a data assistant, interpreting SQL results and transforming them into user-friendly answers using a language model.
 * **VisualizeAgent:** An agent that generates JavaScript code for Google Charts based on user questions and SQL results. It suggests suitable chart types and constructs the JavaScript code to create visualizations of the data.
+* **Variation Executor Agent:** Executes the marketing campaigns based on the variations provided by the DSL Interpreter Agent. Actions: `execute_campaign(variation)` - Takes a variation and executes marketing actions (e.g., sending emails, SMS messages) according to specified timing and content. Observations: Success/failure status of each action, and potentially performance data (e.g., email open rates).
 
 **Note:** the library was formerly named Talk2Data. You may still find artifacts with the old naming in this repository. 
 
